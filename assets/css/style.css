@@ -1,0 +1,578 @@
+::-webkit-resizer,
+::-webkit-scrollbar-corner {
+    background-color: transparent
+}
+
+body::-webkit-scrollbar {
+    margin-left: 10px;
+    width: 8px;
+    height: 3px
+}
+
+::-webkit-scrollbar {
+    margin-left: 10px;
+    width: 12px;
+    height: 3px
+}
+
+::-webkit-resizer,
+::-webkit-scrollbar-corner {
+    background-color: transparent
+}
+
+body::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #e2d6cf;
+    border-radius: 5px;
+    background-clip: none;
+    border-left: none
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #e2d6cf;
+    border-radius: 0;
+    background-clip: padding-box;
+    border-left: 8px solid transparent
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    background-color: transparent
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track-piece {
+    background-color: transparent
+}
+
+body {
+    background: rgba(0, 0, 0, .9);
+    margin: 0;
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.logo__img {
+    height: 42px;
+    object-fit: cover
+}
+
+.bg__wrap {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-position: 0 -30vh;
+    background-repeat: no-repeat;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(33, 114, 229, 0.1) 0%, rgba(33, 36, 41, 0) 100%)
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+    opacity: .6;
+    font-size: 15px
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #ec65b3 !important;
+    font-weight: 700;
+    opacity: 1 !important
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    transition: all .2s ease 0s;
+    opacity: 1
+}
+
+.navbar-dark .navbar-toggler {
+    border: 0
+}
+
+.navbar-toggler:focus {
+    box-shadow: none
+}
+
+.text-shadow {
+    font-weight: 700;
+    color: #dd68ac;
+    text-shadow: rgb(221 104 172) 0 0 12px
+}
+
+.$LOCKSWAP__img-animation {
+    animation: 1.5s ease 0s infinite normal none running flicker
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0
+    }
+    10% {
+        opacity: 0
+    }
+    20% {
+        opacity: 1
+    }
+    30% {
+        opacity: 1
+    }
+    40% {
+        opacity: 1
+    }
+    50% {
+        opacity: 0
+    }
+    60% {
+        opacity: 1
+    }
+    70% {
+        opacity: 1
+    }
+    80% {
+        opacity: 0
+    }
+    90% {
+        opacity: 1
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes lightRun {
+    100% {
+        transform: translate3d(50%, 50%, 0px)
+    }
+}
+
+#statistic {
+    margin-top: 3rem
+}
+
+.statistic {
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    background: #000;
+    border: 1px solid #dd68ac;
+    border-radius: 20px;
+    padding: 16px 0
+}
+
+.statistic__img {
+    transition: all .2s ease 0s;
+    position: absolute;
+    height: 180px;
+    opacity: .97;
+    bottom: 6px
+}
+
+.statistic__img:hover {
+    transform: scale(1.2, 1.2)
+}
+
+.statistic__img--left {
+    left: 18px
+}
+
+.statistic__img--right {
+    right: 18px
+}
+
+.statistic__wrap--text {
+    color: #aa9585
+}
+
+.statistic__wrap--number {
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    font-weight: 700;
+    user-select: none
+}
+
+.statistic__wrap--number--pink {
+    text-shadow: rgb(221 104 172) -1px -1px 0, rgb(221 104 172) 0 -1px 0, rgb(221 104 172) 1px -1px 0, rgb(221 104 172) 1px 0 0, rgb(221 104 172) 1px 1px 0, rgb(221 104 172) 0 1px 0, rgb(221 104 172) -1px 1px 0, rgb(221 104 172) -1px 0 0
+}
+
+.statistic__wrap--number--yellow {
+    text-shadow: rgb(243 198 34) -1px -1px 0, rgb(243 198 34) 0 -1px 0, rgb(243 198 34) 1px -1px 0, rgb(243 198 34) 1px 0 0, rgb(243 198 34) 1px 1px 0, rgb(243 198 34) 0 1px 0, rgb(243 198 34) -1px 1px 0, rgb(243 198 34) -1px 0 0
+}
+
+.statistic__wrap--number--light {
+    position: absolute;
+    inset: -100% 0 0 -100%;
+    pointer-events: none;
+    animation: 10s linear 0s infinite normal none running lightRun;
+    background: radial-gradient(circle, white, transparent 12%) 0px 0px/25% 25%, radial-gradient(circle, white, black 15%) 50% 50%/12.5% 12.5%;
+    mix-blend-mode: color-dodge
+}
+
+.airdrop {
+    border-radius: 1.5rem;
+    background-color: #00ff26
+}
+
+.airdrop__header--button {
+    background-color: rgb(11 22 43);
+    border-radius: 1.5rem
+}
+
+.airdrop__exchange--select--item--img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 9999px
+}
+
+.build__img {
+    max-width: 18.5rem;
+    max-height: 17.125rem
+}
+
+.build__button {
+    border-radius: .75rem;
+    box-shadow: .125rem .4375rem 1.375rem 0 rgb(45 45 61/8%)
+}
+
+.select-box {
+    position: relative;
+    display: block
+}
+
+.select-box__current {
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    outline: none
+}
+
+.show-select-box-list {
+    display: block !important
+}
+
+.select-box__current:focus+.select-box__list .select-box__option {
+    cursor: pointer
+}
+
+.select-box__icon--rotate {
+    transform: translateY(-50%) rotate(180deg) !important
+}
+
+.select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: .3;
+    transition: .2s ease
+}
+
+.select-box__value {
+    display: flex
+}
+
+.select-box__input {
+    display: none
+}
+
+.select-box__input:checked+.select-box__input-text {
+    display: block
+}
+
+.select-box__input-text {
+    display: none;
+    border-radius: 9999px;
+    background-color: rgb(11 22 43)
+}
+
+.select-box__list {
+    width: 100%;
+    padding: 1rem 0;
+    list-style: none;
+    display: none;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    background-color: rgb(11 22 43);
+    z-index: 99
+}
+
+.select-box__option {
+    display: block;
+    padding: 15px;
+    color: #fff
+}
+
+.btn-gray {
+    background-color: #aa9585
+}
+
+.select-box__option:hover,
+.select-box__option:focus {
+    color: #fff;
+    background-color: #00ff26
+}
+
+.airdrop__exchange--select {
+    border: 1px solid #343a3f;
+    background-color: #00ff26;
+    border-radius: 1rem;
+    padding: 1rem;
+    line-height: 2.25rem;
+    font-size: 1.3rem;
+    width: 100% !important
+}
+
+.airdrop__exchange--input {
+    background-color: #00ff26;
+    font-size: 1.4rem;
+    line-height: 2.25rem;
+    color: #f3f4f6;
+    border: none;
+    box-shadow: none;
+    font-weight: 800
+}
+
+.form-control:disabled,
+.form-control[readonly],
+.form-control[readonly]:focus {
+    background-color: #00ff26;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #9ca3af;
+    border: none;
+    box-shadow: none;
+    font-weight: 500
+}
+
+.airdrop__exchange--input:focus {
+    background-color: #00ff26;
+    font-size: 1.4rem;
+    line-height: 2.25rem;
+    color: #f3f4f6;
+    border: none;
+    box-shadow: none
+}
+
+.airdrop__exchange--form--button--buy {
+    font-weight: 500;
+    background-color: #dd68ac;
+    border: 0;
+    border-radius: .75rem
+}
+
+.airdrop__exchange--form--tep-1 {
+    background-color: #dd68ac;
+    height: 2rem;
+    width: 2rem;
+    z-index: 9
+}
+
+.airdrop__exchange--form--tep-2 {
+    background-color: #374151;
+    height: 2rem;
+    width: 2rem;
+    z-index: 9
+}
+
+.airdrop__exchange--form--line {
+    height: 1px;
+    background-color: #6b7280
+}
+
+.btn-connect-wallet {
+    border-radius: 20px;
+    background-color: rgba(225, 225, 225, .2)
+}
+
+.btn-connect-wallet i {
+    color: #dd68ac;
+    margin-right: 8px;
+    font-size: 14px
+}
+
+.btn-connect-wallet img {
+    max-height: 26px
+}
+
+.btn-connect-wallet-gradient {
+    background: linear-gradient(270deg, rgb(233, 96, 175) -10.61%, rgb(243, 198, 34) 112.88%);
+    outline: none
+}
+
+.hover-color-none:hover {
+    color: #dd68ac
+}
+
+.navbar__popover--inside {
+    border-radius: 5px;
+    display: inline-flex;
+    width: fit-content;
+    padding: 0 4px;
+    font-size: 12px;
+    font-weight: 200
+}
+
+.menu__right {
+    position: fixed;
+    right: 1rem;
+    top: 7rem;
+    background-color: #00ff26;
+    border: 1px solid #272f52;
+    border-radius: 5px;
+    opacity: .9;
+    z-index: 2
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: rgba(255, 255, 255, .95);
+    color: #dd68ac
+}
+
+.nav-pills {
+    background-color: rgba(236, 208, 233, .1);
+    border-radius: 2rem
+}
+
+.nav-link,
+.nav-link:hover {
+    color: #aa9585
+}
+
+.nav-pills .nav-link {
+    border-radius: 2rem
+}
+
+.text-yellow {
+    color: #f3c622
+}
+
+.text-pink {
+    color: #ec6998
+}
+
+.fs-small {
+    font-size: .875rem
+}
+
+.text-shadow {
+    text-shadow: rgb(243 198 34) 0 0 12px
+}
+
+.pool__item--img--mobile {
+    opacity: .9;
+    margin-top: -3em
+}
+
+.pool__item--img--desktop {
+    opacity: .9;
+    margin-top: -1.9em
+}
+
+.pool__item {
+    transition: all .2s ease 0s;
+    background: 0% 0%/100% no-repeat rgba(2, 12, 32, 0.9);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #272f52;
+    border-image: initial;
+    border-radius: 5px;
+    text-decoration: none;
+    background-repeat: no-repeat
+}
+
+.pool__item:hover {
+    border: 1px solid #dd68ac;
+    background-position: 75% center
+}
+
+.pool__item--bg {
+    background-image: url(../images/$LOCKSWAP-desktop-cover.abadc046.png);
+    background-size: cover
+}
+
+.pool__item--icon {
+    height: 46px
+}
+
+.footer__line {
+    border-top: 1px solid #aa9585;
+    opacity: .1
+}
+
+.space-x-8>:not([hidden])~:not([hidden]) {
+    margin-right: 2;
+    margin-left: calc(2rem * 1)
+}
+
+.opacity-8 {
+    opacity: .8
+}
+
+@media(min-width:992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .8rem;
+        padding-left: .5rem
+    }
+    .navbar__popover {
+        top: -.5rem;
+        right: -3rem
+    }
+    .navbar__popover--inside {
+        position: relative;
+        background: linear-gradient(270deg, rgb(233, 96, 175) -10.61%, rgb(243, 198, 34) 112.88%);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        opacity: 1 !important;
+        border-width: 1px;
+        border-style: solid;
+        border-color: initial;
+        border-image: linear-gradient(270deg, rgb(233, 96, 175) -10.61%, rgb(243, 198, 34) 112.88%) 1/1/0 stretch
+    }
+    .navbar__popover--inside span {
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        padding: 2px 0;
+        opacity: 1
+    }
+}
+
+@media(min-width:1200px) {}
+
+@media(max-width:1200px) {}
+
+@media(max-width:768px) {
+    .pool__item--bg {
+        background-image: url(../images/$LOCKSWAP-mobile-cover.46e4ff44.png)
+    }
+}
+
+@media(max-width:576px) {}
+
+@media(max-width:992px) {
+    .navbar-connect {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        flex-direction: row-reverse;
+        z-index: 1;
+        background: rgba(0, 0, 0, .4);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        justify-content: flex-end;
+        box-sizing: border-box;
+        padding: 8px;
+        height: 56px
+    }
+}
+
+@media(max-width:992px) and (min-width:768px) {
+    .statistic__img {
+        height: 130px
+    }
+}
